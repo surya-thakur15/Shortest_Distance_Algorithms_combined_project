@@ -1,12 +1,20 @@
+/*
+*
+* @ by Surya Thakur
+*
+*/
+
 #include <stdio.h>
 #define INF 99999
 #include <limits.h>
 #include<stdbool.h>
-
+ // this project include Dijkshtra, Floyd-Warshall and BellMan Ford algorithm
+ 
 int V=9;
 
 int distMinimum(int distance[], bool boolArray[])
 {
+ // this function gives us minimun index values after comparison.
 int min = INF, min_index,i,j,v;
 
 for ( v = 0; v < V; v++)
@@ -28,6 +36,7 @@ for (i = 0; i < V; i++)
 
 void OutputPath(int Nodes_Space[V][V], int distance[V], int destination, int source)
 {
+  // this function prints the path, which we are looking for.
     int i,de;
     printf("Enter the destination\n");
     scanf("%d",&de);
